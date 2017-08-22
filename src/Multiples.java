@@ -13,14 +13,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Multiples {
-    public static void main(String[] arga) {
-        boolean choice = false;
-        ArrayList<Integer> multiples = new ArrayList<>();
+    public static void main(String[] args) {
+        boolean choice = false; //for part 2
         int sum = 0;
         int first;
         int second;
         int max;
-        Scanner howMany = new Scanner(System.in);
         Scanner firstNumber = new Scanner(System.in);
         Scanner secondNumber = new Scanner(System.in);
         Scanner maximumNumber = new Scanner(System.in);
@@ -44,11 +42,9 @@ public class Multiples {
 
         for(int i = 0; i < max; i++){
             if(i%first==0 && i%second==0){
-                multiples.add(i);
                 sum += i;
             }
             else if(i%first==0 || i%second==0){
-                multiples.add(i);
                 sum += i;
             }
 
